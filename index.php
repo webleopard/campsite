@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("description", "Шаблон сайта для гостиницы, отеля, хостела с адаптивным дизайном и модулем управления бронированием на Битриксе");
-$APPLICATION->SetTitle("Заказать сайт для для гостинцы, отеля, хостела, шаблон 1С Битрикс");
+$APPLICATION->SetPageProperty("description", "База отдыха «Салют»");
+$APPLICATION->SetTitle("База отдыха «Салют»");
 $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 ?>
 
