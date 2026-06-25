@@ -1,0 +1,165 @@
+/*.col-xl-  (>= 1200px)*/
+@media screen and (min-width: 1200px)
+{
+
+    .content_container {padding: 0 3px;}
+   
+}
+/*.col-lg-  (>= 992px)*/
+@media screen and (max-width: 1200px)
+{
+    header > .content_container, .top_panel {padding: 0 15px;} 
+    header .mobile_menu {display: block!important;}
+    header .logo {position: relative; padding: 20px 0 20px 55px;  text-align: left;}
+    header .logo img {max-height: 100px; max-width: 300px; padding: 10px;}
+    
+    header.header_type_1 {box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.2);}
+    
+    .page_content_container  {padding: 0 5px;}    
+    
+    .mobile_submenu_container .menu {overflow: auto}
+    
+}
+/*.col-md-  (>= 768px)*/
+@media screen and (max-width: 991px)
+{
+    header, .top_panel {padding: 0 10px;}   
+    header .main_menu {display: none;}  
+    
+    h1.styled::after, h1.page_block_header::after, h2.styled::after, h2.page_block_header::after {display: none;}
+}
+/*.col-sm-  (>= 576px)*/
+@media screen and (max-width: 767px)
+{
+    header, .top_panel {padding: 0 5px;} 
+    header .logo img {max-height: 80px;}
+     
+    .ajax_form .popup_content {padding: 20px 10px;}
+     
+    h1, .header1 {font-size: 2rem; margin: 0.7rem 0 0.7rem;}
+    h2, .header2 {font-size: 1.5rem; margin: 0.7rem 0 0.7rem;}
+    h3, .header3 {font-size: 1.3rem; margin: 0.3rem 0 0.3rem;}
+    h4, .header4 {font-size: 1rem; margin: 0.3rem 0 0.3rem;}
+    h5, .header5 {font-size: 0.9rem; margin: 0.3rem 0 0.3rem;}
+    
+    h2.page_block_header {margin: 0.7rem 0 0.7rem;}
+
+     
+}
+/*.col-*/
+@media screen and (max-width: 575px)
+{
+    h1, .header1 {font-size: 1.6rem; margin: 0.5rem 0 0.5rem;}
+    h2, .header2 {font-size: 1.2rem; margin: 0.5rem 0 0.5rem;}
+    h3, .header3 {font-size: 1.1rem; margin: 0.15rem 0 0.15rem;}
+    h4, .header4 {font-size: 0.9rem; margin: 0.15rem 0 0.15rem;}
+    h5, .header5 {font-size: 0.6rem; margin: 0.15rem 0 0.15rem;}
+
+}
+
+
+
+
+
+.mobile_menu {
+    display: none;
+    background-color: #007eff;
+    position: relative;
+    color: #FFFFFF; text-align: left;
+    line-height: 55px; 
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    cursor: pointer;  
+}
+.mobile_menu a {color: #FFFFFF; text-transform: uppercase; font-size: 0.90rem; width: 100%; display: block;}
+.mobile_menu a.root-item-selected {text-decoration: none;}
+
+.mobile_menu_content {display: none; padding: 0 0 40px; margin: 0;} 
+.mobile_menu_content li {text-align: center; list-style: none;}
+
+/*Мобильная кнопка*/
+.mobile_menu {display: block; position: absolute; left: -10px; top: 50%; margin-top: -20px;}
+.mobile_menu .icon {
+    width: 28px;
+    cursor: pointer;
+    position: absolute; 
+    top: 25px; 
+    left: 20px;
+    height: 16px;
+    margin-top: -13px;
+}
+.mobile_menu .icon .button {
+    max-width: 30px;
+    width: 100%;
+    position: relative;
+    height: 2px;
+    float: right;
+    margin-top: 7px;
+    background-color: #424444;
+}
+.mobile_menu .icon::before { 
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #424444;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.mobile_menu .icon::after { 
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #424444;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.mobile_menu .icon.active .button {display: none;}
+.mobile_menu .icon.active::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: rotate(45deg);
+    width: 100%;
+    height: 2px;
+    background-color: #424444;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.mobile_menu .icon.active::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: rotate(-45deg);
+    width: 100%;
+    height: 2px;
+    background-color: #424444;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+
+
+
+
+
+

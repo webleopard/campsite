@@ -1,0 +1,149 @@
+.price_block .left_col {flex: 0 0 300px; max-width: 300px; padding-right: 40px;}
+
+.price_block h3 {margin: 0.8rem 0 0.8rem;}
+
+.price_block .item {
+    width: 100%;
+    overflow: hidden; 
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: -1px;
+}
+.price_block .item .name {font-weight: 600; flex: 0 0 60%;}
+.price_block .item .price_info {flex: 0 0 40%; text-align: right;}
+.price_block .item .price_btn_form_container {flex: 0 0 160px;}
+.price_block .item .price_btn_form {margin-left: 15px; white-space: nowrap;}
+body.SITE_THEME_DARK .price_block .item {border: 1px solid var(--THEME_DARK_LINE_COLOR)}
+
+
+/*Меню разделов*/
+.price_block .cat_menu 
+{
+    background-color: #f5f5f5;
+    padding: 30px;
+}
+.price_block .cat_menu > a {display: block; padding: 7px 0; text-decoration: none;}
+.price_block .cat_menu > a.active {text-decoration: underline;}
+.price_block .cat_menu .menu_pad {width: 3px; display: inline-block;}
+.price_block .cat_menu .show_all_container {width: 100%; text-align: center;}
+.price_block .cat_menu .show_all {margin-top: 10px; width: 100%;}
+.price_block .cat_menu .show_all::before 
+{
+  content: "\ea79";
+  margin-right: 5px;
+  display: inline-block;
+  margin-top: -2px;
+  vertical-align: middle;
+  
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body.SITE_THEME_DARK .price_block .cat_menu {background-color: var(--THEME_DARK_LINE_COLOR)}
+
+/*Поиск*/
+.price_block .search {position: relative;}
+.price_block .search input {margin: 0;}
+.price_block .search:not(.search_active)::before 
+{
+    content: "\ea4f";
+    color: #d5d5d5;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body.SITE_THEME_DARK .price_block .search {opacity: 0.8;}
+body.SITE_THEME_DARK .price_block .search:hover {opacity: 1;}
+
+.price_block .clear_search
+{
+    content: "\ea4f";
+    color: #000;
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.price_block .show_filter::before {
+  content: "\e9dd";
+  margin-right: 5px;
+  display: inline-block;
+  margin-top: -2px;
+  vertical-align: middle;
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*.col-xl-  (>= 1200px)*/
+@media screen and (min-width: 1200px)
+{
+       
+}
+/*.col-lg-  (>= 992px)*/
+@media screen and (max-width: 1200px)
+{
+     
+}
+/*.col-md-  (>= 768px)*/
+@media screen and (max-width: 991px)
+{
+    
+    .price_block {-ms-flex-wrap: wrap !important; flex-wrap: wrap !important;}
+    .price_block .left_col {flex: 0 0 100%; max-width: 100%; padding-right: 0px;} 
+    
+
+    .price_block .cat_menu {padding: 15px; margin-bottom: 10px;}
+    .price_block .cat_menu > a {display: inline-block; margin-right: 10px;}  
+    .price_block .cat_menu .show_all {width: auto;}
+    
+    
+    .price_block .show_filter {display: inline-block!important;}
+    .price_block .cat_menu {display: none;}
+    .price_block .search {display: none;}
+    
+    
+    .price_block .item .name {flex: 0 0 100%; text-align: center;}
+    .price_block .item .price_info {flex: 0 0 100%}
+    .price_block .item .price_val {flex: 0 0 50%; text-align: center; margin-top: 15px;}
+    .price_block .item .price_btn_form_container {flex: 0 0 50%; text-align: center; margin-top: 15px;}
+    
+    .price_block h2, .price_block h3, .price_block h4 {text-align: center;}
+}
+/*.col-sm-  (>= 576px)*/
+@media screen and (max-width: 767px)
+{
+    
+}
+/*.col-*/
+@media screen and (max-width: 575px)
+{
+    
+}

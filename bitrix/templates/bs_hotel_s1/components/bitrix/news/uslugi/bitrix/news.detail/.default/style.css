@@ -1,0 +1,41 @@
+.uslugi_detail .detail_slider {padding: 20px 0 30px 0;}
+.uslugi_detail .detail_slider .item {width: 300px; height: 200px; margin: 0 10px 10px 0;}
+.uslugi_detail .detail_slider .item img {height: 100%; display: block; width: 100%; object-fit: cover;}
+
+
+.uslugi_detail .order_block {padding: 20px 30px;}
+.uslugi_detail .order_block .btn {margin-left: 20px;}  
+/*.col-xl-  (>= 1200px)*/
+@media screen and (min-width: 1200px)
+{
+       
+}
+/*.col-lg-  (>= 992px)*/
+@media screen and (max-width: 1200px)
+{
+     
+}
+/*.col-md-  (>= 768px)*/
+@media screen and (max-width: 991px)
+{
+    
+}
+/*.col-sm-  (>= 576px)*/
+@media screen and (max-width: 767px)
+{
+    
+}
+/*.col-*/
+@media screen and (max-width: 575px)
+{
+    .uslugi_detail .btn {margin-top: 20px; margin-left: 0px!important;}   
+}
+
+@media screen and (min-width: 1350px){
+    .uslugi_detail .detail_slider .owl-nav button.owl-prev {left: -65px;}
+    .uslugi_detail .detail_slider .owl-nav button.owl-next {right: -65px;}
+}
+@media screen and (max-width: 1300px){
+    .uslugi_detail .detail_slider .owl-nav button.owl-prev {left: 0;}
+    .uslugi_detail .detail_slider .owl-nav button.owl-next {right: 0;}   
+}

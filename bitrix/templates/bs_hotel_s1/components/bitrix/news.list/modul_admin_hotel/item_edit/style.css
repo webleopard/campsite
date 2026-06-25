@@ -1,0 +1,12 @@
+.add_edit_form {max-width: 500px;}
+
+.add_edit_form  input.alert {border: 1px solid #CC0000!important;}
+
+.add_edit_form select[readonly] {pointer-events: none;}
+
+.add_edit_form .block_date {width: 50%; float: left;}
+
+/*date*/
+.add_edit_form input[class^='DATE'] {background: #FFF url(/include/images/svg/calendar.svg) right 10px center no-repeat; background-size: auto; background-size: 20px; cursor: pointer;}
+
+#ui-datepicker-div {z-index: 99999 !important;}

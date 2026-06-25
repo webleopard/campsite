@@ -1,0 +1,140 @@
+.documents_block .left_col {flex: 0 0 300px; max-width: 300px; padding-right: 40px;}
+.documents_block .section_block {margin-bottom: 15px}
+
+.documents_block .item {
+    width: 100%;
+    overflow: hidden; 
+    margin: 0 0 10px 0;
+}
+.documents_block .item .icon_file {height: 30px; width: 35px; }
+.documents_block .item .descr {padding-top: 5px;}
+.documents_block .item .iconfont_a_container a::before {
+    content: "\e9d8";
+    margin-right: 3px;
+    left: 0px;
+    top: 50%;
+    margin-top: -25%;
+    font-size: 30px;
+    color: var(--OPTION_BASE_COLOR);
+}
+
+/*Меню разделов*/
+.documents_block .cat_menu {background-color: #f5f5f5; padding: 30px;}
+.documents_block .cat_menu > a {display: block; padding: 7px 0; text-decoration: none;}
+.documents_block .cat_menu > a.active {text-decoration: underline;}
+.documents_block .cat_menu .menu_pad {width: 3px; display: inline-block;}
+.documents_block .cat_menu .show_all_container {width: 100%; text-align: center;}
+.documents_block .cat_menu .show_all {margin-top: 10px; width: 100%;}
+.documents_block .cat_menu .show_all::before 
+{
+  content: "\ea79";
+  margin-right: 5px;
+  display: inline-block;
+  margin-top: -2px;
+  vertical-align: middle;
+  
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body.SITE_THEME_DARK .documents_block .cat_menu {background-color: var(--THEME_DARK_LINE_COLOR)}
+
+/*Поиск*/
+.documents_block .search {position: relative;}
+.documents_block .search input {margin: 0;}
+.documents_block .search:not(.search_active)::before 
+{
+    content: "\ea4f";
+    color: #d5d5d5;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body.SITE_THEME_DARK .documents_block .search {opacity: 0.8;}
+body.SITE_THEME_DARK .documents_block .search:hover {opacity: 1;}
+
+
+.documents_block .clear_search
+{
+    content: "\ea4f";
+    color: #000;
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.documents_block .show_filter::before {
+  content: "\e9dd";
+  margin-right: 5px;
+  display: inline-block;
+  margin-top: -2px;
+  vertical-align: middle;
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*.col-xl-  (>= 1200px)*/
+@media screen and (min-width: 1200px)
+{
+       
+}
+/*.col-lg-  (>= 992px)*/
+@media screen and (max-width: 1200px)
+{
+     
+}
+/*.col-md-  (>= 768px)*/
+@media screen and (max-width: 991px)
+{
+    
+    .documents_block {-ms-flex-wrap: wrap !important; flex-wrap: wrap !important;}
+    .documents_block .left_col {flex: 0 0 100%; max-width: 100%; padding-right: 0px;} 
+    
+
+    .documents_block .cat_menu {padding: 15px; margin-bottom: 10px;}
+    .documents_block .cat_menu > a {display: inline-block; margin-right: 10px;}  
+    .documents_block .cat_menu .show_all {width: auto;}
+    
+    
+    .documents_block .show_filter {display: inline-block!important;}
+    .documents_block .cat_menu {display: none;}
+    .documents_block .search {display: none;}
+}
+/*.col-sm-  (>= 576px)*/
+@media screen and (max-width: 767px)
+{
+    
+}
+/*.col-*/
+@media screen and (max-width: 575px)
+{
+    
+}

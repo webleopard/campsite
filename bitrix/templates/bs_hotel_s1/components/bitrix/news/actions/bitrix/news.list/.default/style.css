@@ -1,0 +1,91 @@
+.actions_container {
+  background-color: #f7fafc;
+}
+
+.slider_actions .item {
+    width: 300px; 
+    border: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin: 0 25px 30px 0;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+body.SITE_THEME_DARK .slider_actions .item  {border: 1px solid var(--THEME_DARK_LINE_COLOR);}
+
+.slider_actions .item:hover
+{
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.3);
+}
+.slider_actions .item .descr {padding: 20px 25px; height: 150px; position: relative;}
+.slider_actions .item .descr .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.slider_actions .item .descr .date {color: #7b7c7c; font-size: 0.7rem; font-style: italic; margin-bottom: 5px;}
+.slider_actions .item .descr .name {z-index: 1; position: relative;}
+.slider_actions .item .descr .name a {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 3.2rem;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+.slider_actions .item .descr .link {
+    font-size: 0.8rem; 
+    font-style: italic; 
+    padding-right: 20px;
+    z-index: 1;
+    position: relative;
+}
+.slider_actions .item .descr .link::after {
+    content: "\e90b";
+    margin-left: 3px;
+    
+    position: absolute;
+    top: 3px;
+    right: 0;
+    
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.slider_actions.owl-theme .owl-nav button.owl-next, .slider_actions.owl-theme .owl-nav button.owl-prev {
+    top: 130px;
+}
+
+
+@media screen and (min-width: 1350px){
+    .slider_actions.owl-theme .owl-nav button.owl-prev {left: -65px;}
+    .slider_actions.owl-theme .owl-nav button.owl-next {right: -65px;}
+}
+@media screen and (max-width: 1300px){
+    .slider_actions {padding: 0 50px;}
+    .slider_actions.owl-theme .owl-nav button.owl-prev {left: 0;}
+    .slider_actions.owl-theme .owl-nav button.owl-next {right: 0;}   
+}
+
+/*.col-lg-*/
+@media screen and (max-width: 1200px){
+     .news .news-list .news-item  {margin: 0 10px 20px 10px;}
+     .slider_actions {padding: 0;}
+}
+
+

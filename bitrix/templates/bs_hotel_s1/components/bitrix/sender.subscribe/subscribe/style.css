@@ -1,0 +1,41 @@
+.subscribe_form {max-width: 280px;}
+.subscribe_form input[type="text"] {
+    background-color: transparent;
+    border: none;
+    color: var(--TEXT_COLOR_FOOTER);
+    height: 42px;
+    margin: 0;
+}
+
+
+footer .subscribe_form {border: 1px solid var(--OPTION_FOOTER_COLOR_L); border-radius: 2.5px;}
+footer.css_dark .subscribe_form {border: 1px solid var(--TEXT_COLOR_FOOTER);}
+.subscribe_form.alert {border: 1px solid rgba(255,0,0,0.5);}
+
+
+.subscribe_form input[type="text"]::-moz-placeholder, 
+.subscribe_form input[type="text"]::-webkit-input-placeholder,
+.subscribe_form input[type="text"]::placeholder {
+    color: var(--TEXT_COLOR_FOOTER); 
+    font-size: 0.9rem!important;
+}
+
+.subscribe_form .btn_subscribe {
+    width: 42px;
+    height: 42px;
+    display: block;
+    background-color: rgba(255,255,255, 0.1);
+    position: relative;
+}
+
+.subscribe_form .btn_subscribe:before {
+    content: "\ea19"; 
+    font-size: 20px;
+    left: 50%;
+    margin-left: -9px;
+    top: 50%;
+    margin-top: -11px;   
+}
+
+
+.subscribe_form.ok .btn_subscribe:before {content: "\e9be"; color: var(--GREEN);}

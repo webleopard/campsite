@@ -1,0 +1,71 @@
+.price .item {
+    width: 270px; 
+    padding: 0; 
+    min-height: 200px; 
+    margin: 0 30px 30px 0; 
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.3);
+    
+    border-top: 3px solid #007eff;
+    border-image: var(--OPTION_GRADIENT);
+    border-image-slice: 1;
+}
+.price .img {width: 270px; height: 270px;}
+.price .img img {width: 100%; height: 100%; object-fit: cover;}
+.price .item:hover {
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+}
+.price .item .name {
+    text-align: center;
+    font-weight: 600; 
+    padding: 0 30px;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 38px;
+    margin-top: 30px;
+}
+.price .item .hr {border-top: 1px solid #f2f2f2; margin: 23px 0;}
+.price .item .price {
+    width: 100%; 
+    text-align: center; 
+    color: var(--OPTION_BASE_COLOR); 
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    
+    padding: 15px 0;
+    margin-top: 10px;
+    
+}
+.price .item .price small {font-weight: normal;}
+.price .item .btn {margin: 15px 0;}
+
+.slider_price.owl-carousel {padding-bottom: 30px;}
+.slider_price.owl-carousel .owl-stage-outer {padding: 0 20px; margin-left: -20px; margin-right: -20px;}
+
+
+body.SITE_THEME_DARK .price .item {border: 1px solid var(--THEME_DARK_LINE_COLOR)}
+body.SITE_THEME_DARK .price .item .price {
+    border-top: 1px solid var(--THEME_DARK_LINE_COLOR);
+    border-bottom: 1px solid var(--THEME_DARK_LINE_COLOR);  
+}
+
+
+@media screen and (min-width: 1350px){
+    .slider_price.owl-theme .owl-nav button.owl-prev {left: -65px;}
+    .slider_price.owl-theme .owl-nav button.owl-next {right: -65px;}
+}
+@media screen and (max-width: 1300px){
+    .slider_price {padding: 0 50px;}
+    .slider_price.owl-theme .owl-nav button.owl-prev {left: 0;}
+    .slider_price.owl-theme .owl-nav button.owl-next {right: 0;}   
+}
+
+/*.col-lg-*/
+@media screen and (max-width: 1200px){
+     .slider_price {padding: 0;}
+}

@@ -1,0 +1,52 @@
+.vacancy h3 {margin-top: 30px;}
+.vacancy .list {margin: 0;}
+.vacancy li {list-style: none;}
+.vacancy .list .item {
+    margin: 0 0 20px 0;
+    padding: 15px 30px; 
+    position: relative;
+    cursor: pointer;
+    
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.3);
+    box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.3);
+
+}
+.vacancy .list .item .item_descr {
+    padding: 20px;
+    font-size: 1.2rem;
+}
+.vacancy .list .item .anons {font-style: italic; font-weight: 400;} 
+.vacancy .list .item .name {font-weight: bold;}
+.vacancy .list .item .price {font-weight: bold; padding: 0 30px;}
+.vacancy .list .item .price_tab {font-weight: bold; color: var(--OPTION_BASE_COLOR);}
+.vacancy .list .item .expand::after {
+    content: '';
+    position: absolute;
+    right: 25px;
+    top: 31px;
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 20px;
+}
+.vacancy .list .item.active .expand::after {
+    -ms-transform:rotate(180deg); 
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}   
+.vacancy .list .item:hover .expand::after {
+    color: var(--OPTION_BASE_COLOR);
+}
+
+
+.vacancy .list .item table {width: 100%;}
+.vacancy .list .item table tr {
+    display: flex;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.vacancy .list .item table td.label {max-width:20%; flex: 0 0 20%;}
+
+.vacancy .list .item .text {display: none; padding: 15px 0 20px 0;}
+.vacancy .list .item.active .text {display: block;}

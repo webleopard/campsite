@@ -1,0 +1,49 @@
+.main_form_container {
+    background-color: #f8f9fb;
+    border-radius: 12px;
+    box-shadow: 0px 15px 15px 0px rgba(50, 50, 50, 0.1);
+}
+body.SITE_THEME_DARK .main_form_container  {background-color: var(--THEME_DARK_LINE_COLOR);}
+
+.main_form {
+    padding: 40px;
+}
+
+.main_form .form_message {text-align: center; margin: 5px 0 30px 0;}
+.main_form .form_field {width: 45%; float: left; margin-right: 2%;}
+
+/*.col-xl-  (>= 1200px)*/
+@media screen and (min-width: 1200px)
+{
+       
+}
+/*.col-lg-  (>= 992px)*/
+@media screen and (max-width: 1200px)
+{
+     
+}
+/*.col-md-  (>= 768px)*/
+@media screen and (max-width: 991px)
+{
+    
+}
+/*.col-sm-  (>= 576px)*/
+@media screen and (max-width: 767px)
+{
+    .main_form {background: #f8f9fb; padding: 20px;}
+    .main_form .form_field {width: 48%; margin-right: 0; margin: 0 1%;}
+    .main_form .descr, .main_form .checkbox_style label {font-size: 0.9rem!important; line-height: 1;}
+    
+    .main_form .form {padding: 0!important;}
+    .main_form .btn_wrapper {text-align: center;}
+    
+}
+/*.col-*/
+@media screen and (max-width: 575px)
+{
+    .main_form {padding: 10px;}
+    .main_form .form_field {width: 100%; margin:0;}
+}
+
+
+

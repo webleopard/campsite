@@ -1,0 +1,20 @@
+.ajax_form .btn_container {text-align: center;}
+.ajax_form .form_result {color: #cc0000 !important}
+
+
+.form_field_DATE_FROM, .form_field_DATE_TO {width: 50%; float: left; position: relative; }
+.form_field_DATE_FROM {padding-right: 10px;}
+.form_field_DATE_TO {padding-left: 10px;}
+
+.form_field_DATE_FROM input, .form_field_DATE_TO input {
+    background: url(/include/images/svg/calendar.svg) right 10px center no-repeat;
+    background-size: 20px;
+    cursor: pointer;
+    padding: 10px 35px 10px 15px!important;
+}
+
+
+.popup_form_hotel .info_text {margin: 10px 0; font-weight: 600;}
+
+.ajax_form  input.alert {border: 1px solid #CC0000;}
+.checkbox_style.alert input[type="checkbox"]:not(:checked) + label::before {background: #CC0000}

@@ -1,0 +1,33 @@
+.more_places.paging a, .more_places.paging span {
+  padding: 4px 12px;
+  margin: 0 1px 2px 0;
+  font-size: 0.9rem;
+}
+.places .load_more {font-size: 0.85rem;}
+.paging.more_places {margin: 5px;}
+
+/*.col-xl-  (>= 1200px)*/
+@media screen and (min-width: 1200px)
+{
+       
+}
+/*.col-lg-  (>= 992px)*/
+@media screen and (max-width: 1200px)
+{
+    .more_places.paging {text-align: center; padding-top: 5px;}    
+}
+/*.col-md-  (>= 768px)*/
+@media screen and (max-width: 991px)
+{
+    
+}
+/*.col-sm-  (>= 576px)*/
+@media screen and (max-width: 767px)
+{
+    
+}
+/*.col-*/
+@media screen and (max-width: 575px)
+{
+    
+}

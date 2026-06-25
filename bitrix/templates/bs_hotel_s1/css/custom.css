@@ -1,0 +1,30 @@
+
+
+/*Кнопки пэйджинг*/
+.paging_buttons .item, .paging_buttons .item_paging
+{
+    border: 1px solid #F0F1EB;
+    padding: 10px 5px;
+    display: block; 
+    height: auto;
+    margin: 0 4px 4px 0;
+    min-width: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+}
+.paging_buttons .item:hover, .paging_buttons .item_paging:hover {color: var(--OPTION_BASE_COLOR); background-color: #F0F1EB;}
+.paging_buttons .item.active, .paging_buttons .item_paging.active {color: #FFF; background-color:var(--OPTION_BASE_COLOR);}   
+
+
+/*dropdown-select*/
+.dropdown-select {width: 250px; position: relative;}
+.dropdown-select .fa {position: relative; padding-left: 10px; color: var(--TEXT_COLOR);transition: all 0.1s ease-out 0s; z-index: 1;}
+.dropdown-select label {display: block; cursor: pointer;}
+.dropdown-select a.active {color: var(--OPTION_BASE_COLOR)}
+.dropdown-select .items {display: none; border: 1px solid #E1E2E3; max-height: 224px; overflow: auto;}
+.dropdown-select .items a {display: block; padding: 5px 10px; height: 28px;}
+.dropdown-select .items {display: none; position: absolute; left: 0; top: 0; background-color: #FFF; z-index: 2; width: 100%; margin-top: -6px; margin-left: -11px;}

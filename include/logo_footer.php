@@ -1,0 +1,1 @@
+<img src="<?=SITE_DIR ?>include/images/logo_footer.png"/>

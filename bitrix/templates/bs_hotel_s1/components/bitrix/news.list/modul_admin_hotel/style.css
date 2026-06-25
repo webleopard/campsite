@@ -1,0 +1,69 @@
+.module_admin .left_col {padding-top: 50px;}
+.module_admin .right_col {overflow: scroll;}
+
+.module_admin .section_block {border: 1px solid #e2e2e2; margin-bottom: 10px; width: 250px; border-right: none;}
+.module_admin .section_block .name {padding: 0 10px; background-color: #f8f9fb; font-weight: 600; height: 50px; line-height: 50px; overflow: hidden;}
+
+.module_admin .section_block .room_item {font-size: 15px; height: 40px; line-height: 40px; overflow: hidden; padding: 0 10px; border-top: 1px solid #e2e2e2;}
+
+.dates_wrapper .section_block {border: 1px solid rgba(255,255,255,0);}
+
+.module_admin .categ_data {margin-bottom: 9px;  border-left: 1px solid #e2e2e2; border-bottom: 1px solid rgba(255,255,255,0);}
+
+/*Даты*/
+.module_admin .date_item {
+    flex: 0 0 100px;
+    height: 50px; 
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    border-top: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+}
+.module_admin .date_item:first-child {border-left: 1px solid #e2e2e2; flex: 0 0 101px;}
+.module_admin .date_item.is_weekend {background-color: #fff4f3}
+.module_admin .date_item:hover {border: 1px solid var(--OPTION_BASE_COLOR);}   
+
+
+/*Свободно номеров на дату*/
+.module_admin .free_count {}
+.module_admin .free_count div {
+    padding: 0 10px; height: 51px; 
+    line-height: 50px; overflow: hidden; flex: 0 0 100px; 
+    text-align: center; color: #339900; 
+    background-color: #f8f9fb;
+    border-right: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+}
+.module_admin .free_count div.alert {color: #990000}
+
+
+/*Даты по номерам*/
+.module_admin .room_line_container {position: relative; overflow: hidden;}
+.module_admin .room_line {position: relative;}
+.module_admin .room_line div {border-top: 1px solid #e2e2e2; border-right: 1px solid #e2e2e2; padding: 0 10px; height: 40px; line-height: 40px; overflow: hidden; flex: 0 0 100px; text-align: center;}
+.module_admin .room_line div.is_weekend {background-color: #fff4f3}
+.module_admin .categ_data .room_line_container:last-child > div {border-bottom: 1px solid #e2e2e2; height: 41px;}
+.module_admin .room_line div.active {cursor: pointer;}
+.module_admin .room_line div.active:hover {background-color: #e8ffe1}
+
+/*Бронь*/
+.module_admin .reserv_item {
+    position: absolute; 
+    background-color: #c0c0c0;
+    height: 30px!important;
+    border-radius: 10px;
+    top: 6px;
+    margin-left: 15px;
+    text-align: center;
+    line-height: 27px;
+    padding: 0 10px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.module_admin .reserv_item.status_confirm {background-color: #acd97f;}
+.module_admin .reserv_item:hover {box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.3);}

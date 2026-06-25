@@ -1,0 +1,19 @@
+.prop_list .prop_item {
+  color: #4E4F54;
+  border-radius: 50px;
+  border: 1px solid #F0F1EB;
+  margin: 0 8px 8px 0;
+  cursor: pointer;
+}
+.prop_list .prop_item:hover {border: 1px solid var(--OPTION_BASE_COLOR);}
+.prop_list .prop_item .name {padding: 4px 12px; white-space: nowrap;}
+.prop_list .prop_item .name::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--OPTION_BASE_COLOR);
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 6px 0 0;
+}

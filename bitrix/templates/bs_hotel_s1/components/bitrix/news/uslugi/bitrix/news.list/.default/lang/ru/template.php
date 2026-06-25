@@ -1,0 +1,3 @@
+<?
+$MESS["IBLOCK_HEADER_USLUGI"] = "";
+?>

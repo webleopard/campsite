@@ -1,0 +1,108 @@
+.top_search_panel {
+  height: 80px;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  opacity: 1;
+  z-index: 999;
+  background-color: #FFF;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.3);
+  top: -200px;
+  transition: all ease .5s;
+}
+.top_search_panel.active {
+ top: 0;
+}
+.top_search_panel .button_close {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  caret-color: transparent;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 30px;
+}
+.top_search_panel .btn {margin-left: 20px;}
+
+.top_search_panel input {
+    width: 100%; 
+    border: 1px solid #d4d4d4; 
+    outline: none; 
+    border-radius: 3px;
+    line-height: 38px;
+    color: #000;
+    margin: 0 10px 0 0!important; 
+    padding: 5px 20px!important;
+    font-size: 1.1rem;
+}
+.top_search_panel input[type="text"]::-moz-placeholder, .top_search_panel input[type="text"]::-webkit-input-placeholder,.top_search_panel input[type="text"]::placeholder {color: #999999; font-family: var(--font-family); font-size: 1rem!important;}
+.title-search-result {
+	//border: 1px solid #c6c6c6;
+	display: none;
+	overflow: hidden;
+	z-index: 205;
+	background-color: #FFF;
+	padding: 10px;
+	border-radius: 3px;
+	width: 450px!important;
+	margin-top: -5px!important; 
+	z-index: 9999!important;
+	box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.3);
+	
+}
+.bx_edit_mode .title-search-result {margin-top: 0;}
+.title-search-result a {font-size: 0.9rem;} 
+.title-search-result .bx_price {padding: 5px 0; font-size: 0.9rem; font-weight: 600;}
+.bx_item_block{
+	padding-bottom:5px;
+	margin-bottom: 10px;
+	//border-bottom:1px solid #0f0f0f;
+}
+.title-search-result .old_price {
+    font-weight: 300;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.all_result,
+.others_result { border: none; }
+
+.all_result { margin-bottom: 0;}
+
+.bx_img_element {flex: 0 0 50px; padding-right: 10px;}
+.bx_image {
+    display: block; width: 50px; height: 50px; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*.col-xl-  (>= 1200px)*/
+@media screen and (min-width: 1200px)
+{
+       
+}
+/*.col-lg-  (>= 992px)*/
+@media screen and (max-width: 1200px)
+{
+     
+}
+/*.col-md-  (>= 768px)*/
+@media screen and (max-width: 991px)
+{
+    
+}
+/*.col-sm-  (>= 576px)*/
+@media screen and (max-width: 767px)
+{
+    .title-search-result {width: 98%!important; left: 1%!important;}   
+}
+/*.col-*/
+@media screen and (max-width: 575px)
+{
+    
+}

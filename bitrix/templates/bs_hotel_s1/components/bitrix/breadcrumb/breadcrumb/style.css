@@ -1,0 +1,23 @@
+.bx-breadcrumb {
+	padding: 20px 30px 10px 0px;
+	font-size: 0.85rem;
+	color: #888888!important;
+}
+.bx-breadcrumb i {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.bx-breadcrumb .bx-breadcrumb-item {
+	float: left;
+	margin-bottom: 10px;
+	white-space: nowrap;
+	vertical-align: middle;
+	margin-right: 10px;
+	line-height: 20px;
+}
+.bx-breadcrumb .bx-breadcrumb-item span {white-space: normal;}
+.bx-breadcrumb .bx-breadcrumb-item a {border-bottom: none; color:#888888;}
+
+.bx-breadcrumb .bx-breadcrumb-item span.home {margin-right: 14px;}
+.bx-breadcrumb .bx-breadcrumb-item img.home {margin-top: -1px; display: inline-block; vertical-align: middle; margin-top: -3px; width: 18px;}
+.bx-breadcrumb .bx-breadcrumb-item .arrow img {display: inline-block; padding-right: 7px; vertical-align: middle; width: 17px;}

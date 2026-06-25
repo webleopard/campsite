@@ -1,0 +1,4 @@
+<?
+$MESS["T_IBLOCK_DESC_SLIDER_ON_MOBILE"] = "     ";
+$MESS["T_IBLOCK_DESC_COUNT_LINE"] = "   ";
+?>

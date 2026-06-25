@@ -1,0 +1,1 @@
+<?include_once($_SERVER["DOCUMENT_ROOT"]."/include/cpanel/include.php");

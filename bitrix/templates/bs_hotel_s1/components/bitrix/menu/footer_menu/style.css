@@ -1,0 +1,25 @@
+.footer_menu ul  {
+    padding: 0;
+    margin: 0;
+}
+
+.footer_menu li {
+    transition: all 0.2s ease 0s;
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+}
+.footer_menu > ul > li.has-child > a {text-decoration: none;}
+
+.footer_menu li.has-child li {padding-left: 12px;} 
+.footer_menu li.has-child li:before {
+    background-color: var(--TEXT_COLOR_FOOTER);
+    content:''; 
+    position: absolute; 
+    width: 4px; 
+    height: 4px; 
+    left:0; 
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -2px;
+}

@@ -1,0 +1,79 @@
+header {
+    position: sticky;
+    top: 16px;
+    background-color: transparent; 
+    border-radius: 12px; 
+    max-width: var(--SITE_WIDTH); 
+    margin: 24px auto;
+    padding: 0 32px;
+    font-weight: 500;
+    z-index: 999;
+    left: 0;
+    right: 0;
+}
+header > .content_container {height: 66px;}
+
+.index_page header {position: fixed;}
+.bx_edit_mode.index_page header {z-index: 10; position: absolute;}
+
+header .logo {padding: 0 30px 0 0;}
+header .logo img {max-height: 45px; width: auto; padding: 0;}
+header .phone {white-space: nowrap; margin-right: 15px;}
+header .phone a {text-decoration: none; font-weight: 600; font-size: 1rem;}
+
+/*Прозрачное*/
+header.css_trans:after {background-color: rgba(232, 232, 232, 0.6);
+  position: absolute;
+  content: "";
+  inset: 0px;
+  border-radius: 8px;
+  backdrop-filter: blur(32px);
+  pointer-events: none;
+  z-index: -1;
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+
+
+/*Цветное*/
+header.css_color {background-color: var(--OPTION_BASE_COLOR); color: #FFF;}
+header.css_color a, header.css_color a:hover {color: #FFF;}
+
+/*Темное*/
+header.css_dark {background-color: #333333; color: #FFF;}
+header.css_dark a, header.css_color a:hover {color: #FFF!important;}
+
+/*Светлое*/
+header.css_light {background-color: #FFF;}
+
+
+/*.col-xl-  (>= 1200px)*/
+@media screen and (min-width: 1200px)
+{
+       
+}
+/*.col-lg-  (>= 992px)*/
+@media screen and (max-width: 1200px)
+{
+     
+}
+/*.col-md-  (>= 768px)*/
+@media screen and (max-width: 991px)
+{
+    
+}
+/*.col-sm-  (>= 576px)*/
+@media screen and (max-width: 767px)
+{
+    header {padding: 0;}
+    .mobile_menu .icon {left: -10px;}
+    header .logo img {max-width: 150px!important;}
+    
+}
+/*.col-*/
+@media screen and (max-width: 575px)
+{
+    header {border-radius: 8px; top: 5px; margin: 5px auto;}
+    
+}
