@@ -1,14 +1,14 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Об отеле", 
+		"О базе отдыха", 
 		"about/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Номера", 
+		"Дома", 
 		"catalog/", 
 		Array(), 
 		Array(), 

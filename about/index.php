@@ -2,7 +2,7 @@
 $no_container=true;
 $GLOBALS['no_footer_padding']=true;
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Об отеле");
+$APPLICATION->SetTitle("О базе отдыха САЛЮТ");
 ?>
 <div class="content_container">
 <?
