@@ -1,5 +1,5 @@
 <?
-$sSectionName = "О базе отдыха";
+$sSectionName = "О базе отдыха «Салют»";
 $arDirProperties = Array(
 
 );
