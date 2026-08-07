@@ -114,7 +114,7 @@ if ($GLOBALS["OPTION_MODUL_USE"]=="Y" && $arParams["IBLOCK_ROOMS_ID"]>0)
 								</svg>
 							</div>
 							<div>
-								<?=($min_guests!=$max_guests && $min_guests>0 && $max_guests>0) ? $min_guests."-":""?><?=$max_guests ?> <small>чел</small></div>
+								<?=($min_guests!=$max_guests && $min_guests>0 && $max_guests>0) ? $min_guests."-":""?><?=$max_guests ?> <small>гостей</small></div>
 						</div>
 					</div>
 					<?} ?>
