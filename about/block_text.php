@@ -46,73 +46,45 @@
 <p>
 	 Стоимость путевки&nbsp;(проживание и трехразовое питание), руб./сутки:
 </p>
-<p>
-</p>
-<table cellpadding="5" cellspacing="0" style="text-align: center;" border="1">
-<tbody>
-<tr>
-	<td>
-		 &nbsp;
-	</td>
-	<td>
- <b>Взрослый </b>
-	</td>
-	<td>
- <b>
-		Ребенок (5-12 лет)</b>
-	</td>
-	<td>
- <b>
-		Продление проживания</b>
-	</td>
-</tr>
-<tr>
-	<td colspan="1">
- <b>Дневное пребывание по карте гостя (с 8.00 до 20.00)</b>
-	</td>
-	<td colspan="1">
-		 550
-	</td>
-	<td colspan="1">
-		 &nbsp;
-	</td>
-	<td colspan="1">
-		 &nbsp;
-	</td>
-</tr>
-<tr>
-	<td style="text-align: center;">
- <b>Дом из бруса</b>
-	</td>
-	<td style="text-align: center;">
-		 3250
-	</td>
-	<td style="text-align: center;">
-		 3000
-	</td>
-	<td style="text-align: center;">
-		 600
-	</td>
-</tr>
-<tr>
-	<td>
- <b>Двухэтажный коттедж</b>
-	</td>
-	<td style="text-align: center;">
-		 3100
-	</td>
-	<td style="text-align: center;">
-		 2850
-	</td>
-	<td style="text-align: center;">
-		 750
-	</td>
-</tr>
-</tbody>
+<p> </p>
+
+<table class="table-content">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Взрослый</th>
+			<th>Ребенок<br>(5–12 лет)</th>
+			<th>Продление<br>проживания</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="center">
+				<b>Дневное пребывание по карте гостя
+				<br>
+				(с 8:00 до 20:00)</b>
+			</td>
+			<td><span class="price">550</span></td>
+			<td>—</td>
+			<td>—</td>
+		</tr>
+		<tr>
+			<td class="center"><b>Дом из бруса</b></td>
+			<td><span class="price">3250</span></td>
+			<td><span class="price">3000</span></td>
+			<td><span class="price">600</span></td>
+		</tr>
+		<tr>
+			<td class="center"><b>Двухэтажный коттедж</b></td>
+			<td><span class="price">3100</span></td>
+			<td><span class="price">2850</span></td>
+			<td><span class="price">750</span></td>
+		</tr>
+	</tbody>
 </table>
- <br>
-<p>
-</p>
+
+<p> </p>
+
 <p>
 	 Расчетный час: с 12.00 до 14.00.
 </p>
