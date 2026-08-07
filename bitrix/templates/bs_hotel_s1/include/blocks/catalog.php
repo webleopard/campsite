@@ -1,7 +1,7 @@
 <?
 $APPLICATION->IncludeComponent(
 	"bitrix:news", 
-	"catalog_hotel_mod", 
+	"catalog_hotel", 
 	array(
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_SECTIONS_CHAIN" => "N",
