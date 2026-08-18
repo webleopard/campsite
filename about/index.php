@@ -8,7 +8,9 @@ $APPLICATION->SetTitle("О базе отдыха «Салют»");
 <?
 $APPLICATION->IncludeFile($APPLICATION->GetCurDir()."block_text.php", Array(), Array("MODE" => "html", "NAME" => ""));
 ?>
-<?include("block_prop_list.php");?>
+
+<?// include("block_prop_list.php"); // Блок в «В этом отеле:»?>
+
 <?include("block_photo_section.php");?>
 </div>
 <div class="air p50"></div>
@@ -22,7 +24,9 @@ $APPLICATION->IncludeComponent(
 		"COMPONENT_TEMPLATE" => ".default",
 		"EDIT_TEMPLATE" => ".default",
 		"PATH" => SITE_TEMPLATE_PATH."/include/blocks/advantage.php"
-	)
+	),
+	false,
+	["ACTIVE_COMPONENT" => "N"]
 );?>
 <?
 $APPLICATION->IncludeComponent(
