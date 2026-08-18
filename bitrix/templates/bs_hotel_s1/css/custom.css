@@ -61,3 +61,13 @@
     background: #fff;
     box-shadow: 0 0 3px rgba(0, 0, 0, .8);
 }
+
+.slogan{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: #01477B;
+}
+.footer_container .slogan{
+    color: #fff;
+}
