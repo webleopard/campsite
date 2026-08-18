@@ -69,11 +69,10 @@ var on_input_change_listener=true;
 
 <div class="<?=$block_id ?>_block_selector catalog_block_wrapper">
 	
-	<?//include('search/filter_props.php');?>
+<?/*	<?include('search/filter_props.php');?>*/?>
 	<?include('search/search_items.php');?>
-	<?//include('search/search_panel.php');?>
-	<?include('search/desc.php');?>
-	
+	<?include('search/search_panel.php');?>
+
 	<?
 	if (empty($items)) $items=array();
 	
@@ -307,104 +306,3 @@ var on_input_change_listener=true;
 	<?} ?>
 </div>
 <div class="air p20"></div>
-
-<style>
-/* ========================================== */
-/* 0. ОТМЕНА ЖЕСТКОЙ ВЫСОТЫ КАРТОЧКИ          */
-/* ========================================== */
-.catalog_block_wrapper .catalog .search_result .item {
-    height: auto !important; /* Отменяем 630px, теперь высота по содержимому */
-    min-height: 500px; /* Optional: можно задать минимальную высоту, чтобы карточки не были слишком низкими, если текста мало */
-}
-
-/* ========================================== */
-/* 1. ФИКСАЦИЯ ФОТО И УБИРАНИЕ ДЫРОК          */
-/* ========================================== */
-.catalog_block_wrapper .item .images_wrapper {
-    height: 250px !important; 
-    min-height: 250px !important;
-    max-height: 250px !important;
-    overflow: hidden !important;
-    position: relative;
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 0 !important;
-}
-
-/* Растягиваем внутренности слайдера */
-.catalog_block_wrapper .item .images_wrapper .slider_images,
-.catalog_block_wrapper .item .images_wrapper .owl-carousel,
-.catalog_block_wrapper .item .images_wrapper .owl-stage-outer,
-.catalog_block_wrapper .item .images_wrapper .owl-stage,
-.catalog_block_wrapper .item .images_wrapper .owl-item,
-.catalog_block_wrapper .item .images_wrapper .item_img {
-    height: 100% !important;
-    min-height: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 0 !important;
-}
-
-/* Картинка */
-.catalog_block_wrapper .item .images_wrapper .item_img img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center !important;
-    display: block !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* ========================================== */
-/* 2. FLEXBOX ДЛЯ КАРТОЧКИ (ЧТОБЫ ФОТО БЫЛО СНИЗУ) */
-/* ========================================== */
-.catalog_block_wrapper .item .item_content {
-    display: flex !important;
-    flex-direction: column !important;
-    height: 100% !important;
-}
-
-/* Верхний блок (текст/кнопки) - компактный */
-.catalog_block_wrapper .item .item_content .descr_container {
-    flex-grow: 0 !important;
-    flex-shrink: 0 !important;
-    height: auto !important;
-}
-
-/* Фото - прижать к низу, если карточка всё же растянется из-за соседей */
-.catalog_block_wrapper .item .item_content .images_wrapper {
-    margin-top: auto !important; 
-    flex-grow: 0 !important;
-    flex-shrink: 0 !important;
-}
-
-/* ========================================== */
-/* 3. ТОЧКИ НАВИГАЦИИ                         */
-/* ========================================== */
-.catalog_block_wrapper .owl-dots {
-    position: absolute !important;
-    bottom: 15px !important;
-    left: 0 !important;
-    width: 100% !important;
-    text-align: center !important;
-    z-index: 10 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: normal !important;
-}
-
-.catalog_block_wrapper .owl-dot span {
-    background: rgba(255, 255, 255, 0.6) !important;
-    margin: 0 3px !important;
-    width: 8px !important;
-    height: 8px !important;
-    border-radius: 50% !important;
-    display: inline-block !important;
-}
-
-.catalog_block_wrapper .owl-dot.active span {
-    background: #fff !important;
-    transform: scale(1.2) !important;
-}
-</style>
