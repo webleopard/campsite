@@ -1,5 +1,4 @@
 
-
 function scroll_to_func(name) {
 	if($(name).length>0) {
 		var elem=$(name+':first');
@@ -195,6 +194,7 @@ $(function() {
 	$('.mobile_submenu_container .menu a[href^="#"]').on("click", function(e) {if (!$(this).hasClass('has_sub')) hide_mobile_menu();});
     function show_mobile_menu()
     {
+		$('.top_menu').removeClass("d-none");
     	$(".main_menu_container").show();
 		$(".mobile_menu .icon").addClass('active');
 		$(".mobile_submenu_container").show("slide", { direction: "left" }, 300);
@@ -208,6 +208,7 @@ $(function() {
     }
     function hide_mobile_menu()
     {
+		$('.top_menu').addClass("d-none");
     	$(".mobile_menu .icon").removeClass('active');
 		$(".mobile_submenu_container").hide("slide", { direction: "left" }, 300);
 		$(".mobile_submenu_content_overlay").hide();
