@@ -193,6 +193,7 @@ if ($GLOBALS["OPTION_MODUL_USE"]=="Y" && $arParams["IBLOCK_ROOMS_ID"]>0)
 			
 			<?
 			/*Характеристики общие*/
+			/*
 			if ($item["PROPERTY_ID"]["LINK_IBLOCK_ID"]>0)
 			{
 				$arFilter = Array("IBLOCK_ID"=>$item["PROPERTY_ID"]["LINK_IBLOCK_ID"], "ACTIVE"=>"Y");
@@ -214,6 +215,7 @@ if ($GLOBALS["OPTION_MODUL_USE"]=="Y" && $arParams["IBLOCK_ROOMS_ID"]>0)
 				</div>
 				<?
 			}
+			*/
 			?>
 			
 			
