@@ -37,12 +37,13 @@ $this->setFrameMode(true);
 			</div>
 			<div class="air p30"></div>
 		<?} ?>
-		
+		<?if($arParams['HIDE_ORDER'] != 'Y'):?>
 		<div class="d-flex flex-wrap flex-sm-nowrap bordered rounded grey-bg order_block">
 			<div class="flex-grow-1 d-flex align-self-center">
 				<div><b><?=GetMessage("T_IBLOCK_USLUGI_ORDER_COMMENT") ?></b></div>
 			</div>
 			<div><a data-header="<?=$arResult["NAME"]?>" data-comment="<?=$arResult["NAME"]?>" class="btn ripple fancybox nobr" href="#popup_callback">Заказать услугу</a></div>
 		</div>
+		<?endif?>
 	
 </div>

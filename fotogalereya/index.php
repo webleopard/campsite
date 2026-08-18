@@ -97,7 +97,8 @@ $APPLICATION->IncludeComponent(
 			"news" => "",
 			"section" => "",
 			"detail" => "#ELEMENT_CODE#/",
-		)
+		),
+        'HIDE_ORDER' => 'Y'
 	),
 	false,
     ["HIDE_ICONS" => "Y"]
