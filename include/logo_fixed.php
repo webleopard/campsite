@@ -1,1 +1,1 @@
-<img src="<?=SITE_DIR ?>include/images/logo.png"/>
+<img src="<?=SITE_DIR ?>include/images/logo+text4.png"/>
