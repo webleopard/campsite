@@ -43,10 +43,13 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/design/header/type_$header_typ
 				<?if(filesize($_SERVER["DOCUMENT_ROOT"].SITE_DIR."include/email.php")) {?>
 				<div class="air p10"></div>
 				<div class="email svg_hover_container flex-grow-1 d-none d-lg-block">
+<?/*
 					<i class="vmiddle">
 					<svg class="svg" fill="#000000" width="14px" height="14px" viewBox="0 0 128 128" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M127,16H1v6.7l63,59.8l55-52.2V104H9V50H1v62h126V16z M64,71.5L14,24H114L64,71.5z"/></g></svg>
 					</i>
 					<?$APPLICATION->IncludeFile(SITE_DIR."include/email.php");?>
+*/?>
+					<?$APPLICATION->IncludeFile(SITE_DIR."include/reestr.php");?>
 				</div>
 				<?} ?>
 			
