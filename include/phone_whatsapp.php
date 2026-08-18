@@ -1,1 +1,0 @@
-<a href="https://wa.me/1111111111" class="item WHATSAPP"></a>

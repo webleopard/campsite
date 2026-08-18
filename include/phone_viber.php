@@ -1,1 +1,0 @@
-<a href="viber://chat?number=%2B71111111111" class="item VIBER"></a>
