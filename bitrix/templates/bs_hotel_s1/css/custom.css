@@ -71,3 +71,9 @@
 .footer_container .slogan{
     color: #fff;
 }
+
+.header_content .contacts_container{
+    display: flex !important;
+    flex-direction: column;
+    gap: 3px;
+}
