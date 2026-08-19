@@ -59,4 +59,4 @@
 'OPTION_CAPTCHA_SETTINGS_captha_key'=>'', 
 'OPTION_CAPTCHA_SETTINGS_captha_key_secret'=>'', 
 'OPTION_CAPTCHA_SETTINGS_captha_point'=>'0.6', 
-'INDEX_PAGE_BLOCKS_ORDER'=>'slider,catalog,infra,uslugi,advantage,actions,modul_admin_hotel,feedback,about,form,text,map');?>
+'INDEX_PAGE_BLOCKS_ORDER'=>'slider,catalog,infra,uslugi,dosug,actions,modul_admin_hotel,feedback,about,form,text,map');?>
