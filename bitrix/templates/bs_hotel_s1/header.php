@@ -106,7 +106,7 @@ if ($GLOBALS["OPTION_SHOW_VSV"]=="Y"){$APPLICATION->IncludeComponent("brainsite:
 
 /*Настройки компонент*/
 $GLOBALS["solution_demo"]=false;
-$APPLICATION->IncludeComponent("brainsite:settings.hotel", ".default");
+// $APPLICATION->IncludeComponent("brainsite:settings.hotel", ".default");
 
 
 
