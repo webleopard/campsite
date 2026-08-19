@@ -72,10 +72,41 @@
     color: #fff;
 }
 
+header.header_type_2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+@media (min-width: 992px) {
+    header.header_type_2{
+        padding-top: 25px;
+    }
+}
+header .logo,
+header .logo img{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+@media (max-width: 575px) {
+    .header_content{
+        flex-wrap: wrap;
+        row-gap: 3px;
+    }
+    .header_content .contacts_container i{
+        display: none;
+    }
+    header .logo img{
+        max-width: 100%;
+    }
+}
 .header_content .contacts_container{
     display: flex !important;
     flex-direction: column;
     gap: 3px;
+}
+.fixed_header{
+    height: auto;
+    padding-top: 4px;
+    padding-bottom: 0;
 }
 
 .catalogDesc__content{
@@ -95,8 +126,7 @@
 .headerReestr{
     position: relative;
     font-size: 12px;
-    margin-top: -15px;
-    padding-bottom: 5px;
+    padding-top: 3px;
     color: grey;
     z-index: 1;
     user-select: none;
