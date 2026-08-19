@@ -38,17 +38,17 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/design/header/type_$header_typ
 					<?$APPLICATION->IncludeFile(SITE_DIR."include/phone1.php");?>
 				</div>
 				
-				<?if(filesize($_SERVER["DOCUMENT_ROOT"].SITE_DIR."include/email.php")) {?>
+				<?/*if(filesize($_SERVER["DOCUMENT_ROOT"].SITE_DIR."include/email.php")) {?>
 				<div class="email svg_hover_container flex-grow-1 d-none d-lg-block">
-<?/*
+
 					<i class="vmiddle">
 					<svg class="svg" fill="#000000" width="14px" height="14px" viewBox="0 0 128 128" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M127,16H1v6.7l63,59.8l55-52.2V104H9V50H1v62h126V16z M64,71.5L14,24H114L64,71.5z"/></g></svg>
 					</i>
 					<?$APPLICATION->IncludeFile(SITE_DIR."include/email.php");?>
-*/?>
-					<?$APPLICATION->IncludeFile(SITE_DIR."include/reestr.php");?>
+
+					
 				</div>
-				<?} ?>
+				<?} */?>
 			
 				
 			</div>
@@ -60,5 +60,8 @@ Asset::getInstance()->addCss(SITE_TEMPLATE_PATH."/design/header/type_$header_typ
 			
 			
 		</div>
+		<?if(filesize($_SERVER["DOCUMENT_ROOT"].SITE_DIR."include/reestr.php")) {?>
+		<div class="headerReestr"><?$APPLICATION->IncludeFile(SITE_DIR."include/reestr.php");?></div>
+		<?} ?>
 	</div>
 </header>

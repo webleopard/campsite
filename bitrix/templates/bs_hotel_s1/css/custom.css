@@ -91,3 +91,17 @@
 .catalog_item .images .item_img{
     height: 425px;
 }
+
+.headerReestr{
+    position: relative;
+    font-size: 12px;
+    margin-top: -15px;
+    padding-bottom: 5px;
+    color: grey;
+    z-index: 1;
+    user-select: none;
+    a{
+        color: inherit;
+        text-decoration: underline dotted;
+    }
+}
