@@ -34,7 +34,7 @@
 }
 
 .price::after{
-    content: ' ₽';
+    content: ' ₽/чел';
 }
 
 .owl-carousel.owl-theme:not(.slider_photo):not(.detail_slider) .owl-nav .owl-prev,
