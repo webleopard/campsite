@@ -2,8 +2,8 @@
 $hide_h1=true;
 if ($_GET['ELEMENT_ID']!='') $hide_h1=true;
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$GLOBALS["OPTION_PAGE_BLOCK_CUSTOM_HEADER_uslugi"] = 'Фотогалерея';
-$APPLICATION->SetTitle("Фотогалерея");
+$GLOBALS["OPTION_PAGE_BLOCK_CUSTOM_HEADER_uslugi"] = 'Галерея';
+$APPLICATION->SetTitle("Галерея");
 ?>
 <?php
 $APPLICATION->IncludeComponent(
