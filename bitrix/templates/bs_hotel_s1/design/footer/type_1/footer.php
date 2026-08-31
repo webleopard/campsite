@@ -44,6 +44,11 @@
 									<div class="address d-inline-block iconfont_container flex-grow-1">
 										<?$APPLICATION->IncludeFile(SITE_DIR."include/address.php");?>
 									</div>
+
+									<div class="map iconfont_a_container">
+										<a href="<?=SITE_DIR ?>contacts/">Посмотреть на карте</a>
+									</div>
+
 									<div class="phone iconfont_a_container">
 										<?$APPLICATION->IncludeFile(SITE_DIR."include/phone1.php");?>
 									</div>
@@ -65,12 +70,6 @@
 										<?$APPLICATION->IncludeFile(SITE_DIR."include/email.php");?>
 									</div>
 									<?} ?>
-									
-									
-									
-									<div class="map iconfont_a_container">
-										<a href="<?=SITE_DIR ?>contacts/">Посмотреть на карте</a>
-									</div>
 									
 									<div class="social">
 										<?require($_SERVER["DOCUMENT_ROOT"].SITE_TEMPLATE_PATH."/design/footer/include/social.php");?>
