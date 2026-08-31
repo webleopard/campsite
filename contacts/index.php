@@ -52,6 +52,18 @@ $APPLICATION->SetTitle("Контакты");?>
 					</div>
 				</div>
 				<?} ?>
+
+				<?if(filesize($_SERVER["DOCUMENT_ROOT"].SITE_DIR."include/phone3.php")) {?>
+				<div class="air p15"></div>
+				<div class="phone_container">
+					<div class="align-self-center">
+						<div class="phone">
+							<label>Телефон:</label>
+							<div><?$APPLICATION->IncludeFile(SITE_DIR."include/phone3.php");?></div>
+						</div>
+					</div>
+				</div>
+				<?} ?>
 				
 				<div class="air p15"></div>
 				<div class="email_container">
