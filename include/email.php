@@ -1,1 +1,1 @@
-<a href="mailto:turbaza-salut@ya.ru">turbaza-salut@ya.ru</a>
+<a href="mailto:turbaza@ao-salut.ru">turbaza@ao-salut.ru</a>
